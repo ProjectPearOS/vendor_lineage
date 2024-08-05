@@ -1,5 +1,5 @@
-# Set Lineage specific identifier for Android Go enabled products
+# Set Pear specific identifier for Android Go enabled products
 PRODUCT_TYPE := go
 
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/amy/config/common_mini_phone.mk)
+# Inherit mini common Pear stuff
+$(call inherit-product, vendor/pear/config/common_mini_phone.mk)

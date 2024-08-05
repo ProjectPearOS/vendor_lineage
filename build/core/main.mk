@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/amy/build/core/main_version.mk
+# Include PearOS versions
+include $(TOPDIR)vendor/pear/build/core/main_version.mk

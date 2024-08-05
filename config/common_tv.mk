@@ -1,15 +1,15 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/amy/config/common.mk)
+# Inherit common Pear stuff
+$(call inherit-product, vendor/pear/config/common.mk)
 
-# Inherit Lineage atv device tree
-$(call inherit-product, device/lineage/atv/lineage_atv.mk)
+# Inherit Pear atv device tree
+$(call inherit-product, device/pear/atv/pear_atv.mk)
 
 # AOSP packages
 PRODUCT_PACKAGES += \
     LeanbackIME
 
-# Lineage packages
+# Pear packages
 PRODUCT_PACKAGES += \
-    LineageCustomizer
+    PearCustomizer
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/amy/overlay/tv
+PRODUCT_PACKAGE_OVERLAYS += vendor/pear/overlay/tv

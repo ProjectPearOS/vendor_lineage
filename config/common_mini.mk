@@ -1,4 +1,4 @@
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/amy/config/common_mobile.mk)
+# Inherit mini common Pear stuff
+$(call inherit-product, vendor/pear/config/common_mobile.mk)
 
 PRODUCT_SIZE := mini

@@ -1,11 +1,11 @@
-# Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/amy/config/common.mk)
+# Inherit common mobile Pear stuff
+$(call inherit-product, vendor/pear/config/common.mk)
 
 # Include AOSP audio files
-include vendor/amy/config/aosp_audio.mk
+include vendor/pear/config/aosp_audio.mk
 
-# Include Lineage audio files
-include vendor/amy/config/lineage_audio.mk
+# Include Pear audio files
+include vendor/pear/config/pear_audio.mk
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -39,10 +39,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifneq ($(WITH_LINEAGE_CHARGER),false)
+ifneq ($(WITH_PEAR_CHARGER),false)
 PRODUCT_PACKAGES += \
-    lineage_charger_animation \
-    lineage_charger_animation_vendor
+    pear_charger_animation \
+    pear_charger_animation_vendor
 endif
 
 # Customizations
@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
-    LineageNavigationBarNoHint \
+    PearNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
 # Media
@@ -91,8 +91,8 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
+    PearBlackTheme \
     ThemePicker \
     ThemesStub
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/amy/overlay/mobile
+PRODUCT_PACKAGE_OVERLAYS += vendor/pear/overlay/mobile

@@ -1,8 +1,8 @@
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/amy/config/common_mini.mk)
+# Inherit mini common Pear stuff
+$(call inherit-product, vendor/pear/config/common_mini.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-$(call inherit-product, vendor/amy/config/wifionly.mk)
+$(call inherit-product, vendor/pear/config/wifionly.mk)
